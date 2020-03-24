@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Document ID"
+        android:id="@+id/documentIDTVTitle"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/documentIDTVTitle"
+        android:id="@+id/documentIDET"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:hint="Enter the document id"
+        android:inputType="text"
+        android:maxLength="20"
+        android:singleLine="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="City Name"
+        android:id="@+id/cityNameTVTitle"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_below="@id/documentIDET"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cityNameTVTitle"
+        android:id="@+id/cityNameET"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:hint="Enter the city name"
+        android:inputType="text"
+        android:maxLength="20"
+        android:singleLine="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="City Details"
+        android:id="@+id/cityDetailsTVTitle"
+        android:layout_marginStart="10dp"
+        android:layout_below="@id/cityNameET"
+        android:layout_marginLeft="10dp" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cityDetailsTVTitle"
+        android:id="@+id/cityDetailsET"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:hint="Enter the city details"
+        android:inputType="text"
+        android:maxLength="20"
+        android:singleLine="true"
+        />
+
+
+    <Button
+        android:layout_below="@id/cityDetailsET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/addbtn"
+        android:text=" Add Values"
+        android:onClick="addValues"
+        />
+
+    <Button
+        android:layout_below="@id/addbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/getbtn"
+        android:text="Get Values"
+        android:onClick="getValues"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/valuesTV"
+        android:layout_below="@id/getbtn"
+        android:textSize="20sp">
+
+    </TextView>
+
+
+
+
+</RelativeLayout>
